@@ -1,0 +1,33 @@
+body {
+    color: #444;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+}
+
+#map {
+  height: 500px;
+  width: 500px;
+}
+
+.navigator a button{
+   width: 120px;
+}
+
+.navigator a button:hover{
+   color: #FFFFFF;
+   background-color: #000000;
+}
+
+.navigator{
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+th, td{
+  border: 2px solid;
+  text-align: center;
+}

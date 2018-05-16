@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alojamiento NY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="shortcut icon" href="https://foroalfa.org/imagenes/ilustraciones/i-love-NY.png">
+</head>
+<body>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <h1>Alojamiento NY</h1>
+    </div>
+
+    <div class="row">
+        <nav class="navigator">
+          <a href="#"><button type="button" name="button" id="navInicio">Inicio</button></a>
+          <a href="#"><button type="button" name="button" id="navMapa">Mapa</button></a>
+          <a href="#"><button type="button" name="button" id="navClasificacion">Clasificación</button></a>
+          <a href="#"><button type="button" name="button" id="navGraficas">Gráficas</button></a>
+        </nav>
+    </div>
+
+    <div id="pestañaInicio">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>Distritos New York</h2>
+
+          <table>
+            <tr>
+              <th>Condado</th>
+              <th>Nombre del Distrito</th>
+            </tr>
+          </table>
+        </div>
+        <div class="col-md-4">
+          <h2>Mejores 3 Distritos</h2>
+
+          <table>
+            <tr>
+              <th>Puesto</th>
+              <th>Nombre del Distrito</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="pestañaMapa">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div id="map"> </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="pestañaClasificacion">
+      <div class="row justify-content-center">
+        <div class="col-md-auto">
+          <h2>Clasificación Distritos</h2>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <label for="ordernar"> Parámetro de Clasificación: </label>
+          <select class="parametro" name="parametro">
+            <option>Seguridad</option>
+            <option>Distancia</option>
+            <option>Rentabilidad</option>
+            <option>Promedio</option>
+          </select>
+          <button id="botOrdenar"> Ordenar </button>
+          <table>
+            <tr>
+              <th>Puesto</th>
+              <th>Distrito</th>
+            </tr>
+            <tbody id="tableBody1">
+
+            </tbody>
+          </table>
+          <button id="exportar1">Exportar Tabla</button>
+        </div>
+        <div class="col-md-6">
+          <label for="ordernar"> Parámetro de Clasificación: </label>
+          <select class="parametro" name="parametro">
+            <option>Seguridad</option>
+            <option>Distancia</option>
+            <option>Rentabilidad</option>
+            <option>Promedio</option>
+          </select>
+          <button id="botOrdenar"> Ordenar </button>
+          <table>
+            <tr>
+              <th>Puesto</th>
+              <th>Distrito</th>
+            </tr>
+            <tbody id="tableBody2">
+
+            </tbody>
+          </table>
+          <button id="exportar2">Exportar Tabla</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+    <script  src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+    
+    <script src="https://www.jqueryscript.net/demo/jQuery-Plugin-To-Convert-HTML-Table-To-CSV-tabletoCSV/jquery.tabletoCSV.js"></script>
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCKLOC2nNGCag9x82Xj206A5h5VhxVTCXA&callback=initMap"></script>
+    
+    <script src="index.js"></script>
+
+</body>
+</html>
